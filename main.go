@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/qor/qor/utils"
+	"github.com/simonedbarber/qor/utils"
 )
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 
 	hasExists := false
 	for _, gopath := range utils.GOPATH() {
-		sourcePath := filepath.Join(gopath, "src/github.com/qor/bindatafs/templates")
+		sourcePath := filepath.Join(gopath, "src/github.com/simonedbarber/bindatafs/templates")
 		_, err := os.Stat(sourcePath)
 		if err == nil {
 			hasExists = true
